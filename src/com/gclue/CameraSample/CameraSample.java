@@ -23,6 +23,7 @@ import android.view.SurfaceView;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.view.Window;
+import android.view.WindowManager;
 
 public class CameraSample extends Activity implements SensorEventListener, LocationListener {
 
@@ -43,7 +44,7 @@ public class CameraSample extends Activity implements SensorEventListener, Locat
 		super.onCreate(savedInstanceState);
 
 		// Notification BarÇè¡Ç∑
-		// getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
+		getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		// Title BarÇè¡Ç∑
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 
